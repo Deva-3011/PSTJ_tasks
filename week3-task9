@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine().toLowerCase();
+
+        int sum = 0;
+
+        for (char ch : s.toCharArray()) {
+            if (ch >= 'a' && ch <= 'z') {
+                sum += (ch - 'a' + 1);
+            }
+        }
+
+        System.out.println(sum);
+    }
+}
